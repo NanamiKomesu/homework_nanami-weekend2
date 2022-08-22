@@ -1,0 +1,48 @@
+header{
+height: 100px;
+width: 100vw;
+background-color: gray;
+display: flex;
+justify-content: space-between;
+}
+
+
+.header-right ul{
+list-style: none;
+}
+
+.kv{
+background-image:url(./img/background-img.JPG);
+background-size: cover;
+background-position: center;
+height: 100vh;
+width: 100vw;
+}
+
+.title-wrap{
+/* text-align: center; */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+}
+
+.main-title{
+font-size: 90px;
+}
+
+.subtitle{
+font-size: 30px;
+}
+
+.grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+margin-top: 6%;
+margin-bottom: 50px;
+}
+
+@media screen and (max-width:600px){
+    
+}
