@@ -1,48 +1,123 @@
-header{
-height: 100px;
-width: 100vw;
-background-color: gray;
-display: flex;
-justify-content: space-between;
+header {
+    height: 100px;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-title {
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 50px;
 }
 
 
-.header-right ul{
-list-style: none;
+
+ .header-right ul {
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 15px; 
+} 
+
+.header li {
+     font-size: 50px;
+    font-weight: bold; 
 }
 
-.kv{
-background-image:url(./img/background-img.JPG);
-background-size: cover;
-background-position: center;
-height: 100vh;
-width: 100vw;
+.kv {
+    background-image: url(./img/furamigo_img.jpg);
+    position: relative;
+    height: 50vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: kvanime 7s ease 0s 1 normal;
 }
 
-.title-wrap{
-/* text-align: center; */
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
+@keyframes kvanime{
+0%{opacity: 0;}
+50%{opacity: 0.5;}
+100%{opacity: 1;}
 }
 
-.main-title{
-font-size: 90px;
+.main-title {
+    font-size: 100px;
 }
 
-.subtitle{
-font-size: 30px;
+.subtitle {
+    font-size: 30px;
+    text-shadow: 10px 4px 4px gray;
 }
 
-.grid{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 10px;
-margin-top: 6%;
-margin-bottom: 50px;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 50px;
+    margin-bottom: 70px;
 }
 
-@media screen and (max-width:600px){
-    
+
+footer {
+    background-color: gray;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:600px) {
+    header {
+        width: 100%;
+    }
+
+    .header-title{
+    font-size: 20px;
+
+    }
+
+    .header-right ul{
+    margin-right:5% ;
+    margin-top: 5%;
+    }
+
+    .header-right li{
+    font-size: 15px;
+    }
+
+    .kv {
+
+background-size:contain;
+max-height: 400px;
+margin-top: 0;    
+    }
+
+    .title-wrap{
+    text-align: center;
+    }
+
+    .main-title{
+    font-size: 50px;
+    }
+    .subtitle{
+    font-size: 15px;
+    font-weight: bold;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+footer span{
+font-size: 5px;
+}
 }
